@@ -133,7 +133,7 @@
 %% mude o resumo  do projeto
 %% ====================================
 %% ====================================
-\initial{E}\textbf{ste trabalho apresenta uma daptação dos processos incremental e unificado, onde um grupo de três Eng. de Software trabalhão  no desenvolvimento de um produto comercial de software. } 
+\initial{E}\textbf{ste trabalho apresenta uma daptação dos processos incremental e unificado, onde um grupo de três Eng. de Software trabalhão no processo de desenvolvimento de um produto comercial de software. } 
 
 %% ====================================
 \begin{figure}
@@ -165,13 +165,14 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-O desenvolvimento de um software é uma grande tarefa que pode ser estendida por vários meses, possivelmente até um ano ou mais. Para tornar esta tarefa mais rapida e pratica é importate, dividir o trabalho em partes menores ou iterações. Cada iteração resultará num incremento de software. 
 
- Iterações são passos do fluxo de trabalho e incrementos são crescimentos do produto.
+O desenvolvimento de um software é uma grande tarefa que pode ser estendida por vários meses, possivelmente até um ano ou mais. Para tornar esta tarefa mais rapida e pratica é importate, dividir o trabalho em partes menores ou iterações. Cada iteração resultará num incremento ou uma versão de software. 
 
-O princípio do processo incremental e iterativo é que, a equipe envolvida, possa refinar e aumentar,  aos pouco, a qualidade, os requisitos e até o alvo do sistema envolvido.  Isso faz toda a diferença, quando falamos em grandes sistemas, a serem automatizados.   
+ Iterações são passos do e incrementos são crescimentos do produto.
 
-Como o processo teve de ser adaptado a um grupo pequeno ele sofreu algumas alteraçãoes principalmente na fase de construção e transição, a nomeclatura adotada para esse modelo de prcesso foi: Processo Unifcado Inclemental Adaptado.
+O princípio do processo incremental e iterativo é que, a equipe envolvida, possa refinar e aumentar,  aos pouco, a qualidade, os requisitos até atingir o sistema final.  Isso faz toda a diferença, quando falamos em grandes sistemas, a serem automatizados.   
+
+Como o processo teve de ser adaptado a um grupo pequeno ele sofreu algumas alteraçãoes principalmente na fase de construção e transição, a nomeclatura adotada para esse modelo de prcesso foi: Processo Ágil Inclemental adaptado.
 
 O processo foi desenvolvido pelos desenvolvedores:
 \begin{itemize}
@@ -180,20 +181,64 @@ O processo foi desenvolvido pelos desenvolvedores:
 \item Vitor Padiar - GitHub: https://github.com/vitorpadiar.}
 \end{itemize} 
 \section{Processo}
-Descreva aqui o processo utilizado.
+
+ O Processo Unificado surgiu como um processo para o desenvolvimento de software orientados a objetos. É um processo iterativo e adaptativo de desenvolvimento que devido a maneira organizada e consistente permite conduzir um projeto de sua concepção a sua implantação.
+ 
+ O PU utiliza um paradigma evolucionário paro o desenvolvimento de softwares. O ciclo de vida iterativo é baseado em versões e incrementos sucessivos a fim de integrar um sistema adequado. Em cada iteração incrementa-se um pouco mais o produto, baseando-se na experiência obtida nas iterações anteriores e no feedback do usuário. Cada iteração pode ser considerada uma nova versão do software de duração fixa, sendo que cada uma destas inclui suas próprias atividades de análise de requisitos, projeto, implementação e testes.
+ 
+  Em cada iteração é escolhido um pequeno subconjunto de requisitos, os quais são rapidamente projetados, implementados e testados pelos usuários. Isso leva a uma realimentação rápida de requisitos baseada em dados concretos de usuários, desenvolvedores e testes, o PU prega uma atitude de aceitar a mudança e a adaptação como fatores inevitáveis e essenciais. Não se deve tentar especificar completamente o sistema em uma tacada interação só, essa idéia cria um conjunto congelado de requisitos.
+ 
+ O resultado de cada iteração é um sistema executável,  porém incompleto. Ele não está pronto para ser colocado em produção e pode continuar nesta situação ainda por muitas iterações mais cada iteração produz um sistema com qualidade de produto final, e não somente um protótipo.
+ 
+  Modedelo de processo unificado figura \ref{rup1}: 
+ \begin{figure}
+	\centering
+	\includegraphics[]{rup1.png}
+	\caption{Exemplo de Modelo Unificado}
+	\label{rup1}
+\end{figure}
+ 
+ O Processo Unificado organiza suas iterações em quatro fases principais:
+\begin{itemize}
+
+\item Concepção: o objetivo desta fase é levantar, de forma genérica e pouco precisa, o escopo do projeto. Não deve existir aqui a pretensão de especificar de forma detalhada requisitos, a idéia é ter uma visão inicial do problema, estimar de forma vaga esforço e prazos e determinar se o projeto é viável e merece uma análise mais profunda.
+
+\item Elaboração: na fase de elaboração todos (ou a grande maioria dos requisitos) são levantados em detalhes. Numa primeira iteração um ou dois requisitos, os de maior risco e valor arquitetural, são especificados em detalhes. Estes são implementados e servem como base de avaliação junto ao usuário e desenvolvedores para o planejamento da próxima iteração. Em cada nova iteração os requisitos antigos são melhor esclarecidos e novos são detalhados. Ao fim da fase, com os requisitos levantados em detalhes, os principais riscos foram tratados e pode-se então fazer estimativas mais realistas.
+
+\item Construção: implementação iterativa dos elementos restantes de menor risco e mais fáceis e preparação para a implantação.
+
+\item Transição: testes finais e implantação.
+
+\end{itemize}
+
+O Processo Unificado foi criado para ser um processo ágil de desenvolvimento e prega uma abordagem realística para a condução de um projeto. Para a sua utilização durante o desenvolvimento devido ao pequeno grupo tivemos de adaptar e modificar os atividades de suas fases para atender as necessidades do desenvolvimento.
 
 \subsection{Papeis}
+
+O processo original exigia a demanda de muitos papeis, para faciliar a adaptação do processo e a melhor distribuição das atividades, adotamos os seguintes papeis para nossa organização:
+
 \begin{itemize}
-	\item Gerente de Projeto: Descreve os objetivos do projeto e como ele será realizado. Inclui estimativas de custo e programação trata da identificação das atividades a serem realizadas, os artefatos e os documentos a serem produzidos, realiza o levantamento do custo do projeto, em um segundo realise acompanha o projeto de forma constante verificando o progresso e os custos  comparando com o que foi pranejado inicialmente, elaboração de relatorios prestação de contas e de resultados.
 
-	\item Analista de Sistema: levantamentos de requisitos e regras de negócio, mapeamento dos processos elaboração dos casos de uso basedo nos requisitos dos clientes, , garantia da integridade dos sistemas, realizar o planejamento das versões, atua tambem como analista de implantação elaborando o plano de implantação da aplicação e coleta requisitos nescessarios para as proximas versões, aplica treinamento aos usuários.
+	\item Gerente de Projeto: Descreve os objetivos do projeto e como ele será realizado. Inclui estimativas de custo e programação trata da identificação das atividades a serem realizadas, os artefatos e os documentos a serem produzidos,versões a serem entregues, realiza o levantamento do custo do projeto, em um segundo realise acompanha o projeto de forma constante verificando o progresso e os custos  comparando com o que foi pranejado inicialmente, elaboração de relatorios prestação de contas e de resultados.
 
-	\item Desenvolvedor: Desenvolver, testar e liberar versões para a  implantação e manter o sistemas de acordo com metodologia e técnicas propostas, para preservar a qualidade, custo, prazo e benefícios.
+	\item Analista de Sistema: levantamentos de requisitos e regras de negócio, mapeamento dos processos elaboração dos casos de uso basedo nos requisitos dos clientes,garantia da integridade dos sistemas, realizar o planejamento das versões, atua tambem como analista de implantação elaborando o plano de implantação da aplicação e coleta requisitos nescessarios para as proximas versões, aplica treinamento aos usuários.
+
+	\item Desenvolvedor: Desenvolver, testar e liberar versões para a  implantação e manter o sistemas de acordo com metodologia e técnicas propostas, para garantir a qualidade, o custo e prazo.
 \end{itemize} 
 \subsection{Atividades}
-Enumere e explique cada uma das atividades, relacione com os papéis.
+\begin{itemize}
+    
 
+\item Atividades do Gerente Projetos tabela \ref{tab1}:
+\input{tab2.tex}
 
+\item Atividades do Analista de Sistemas tabela \ref{tab2}:
+\input{tab1.tex}
+
+\item Atividades do Desenvolvedor tabela \ref{tab3}:
+\input{tab3.tex}
+
+\end{itemize}
 \section{Execução do projeto}
 
 Relacione as atividades com os integrantes, crie um cronograma conforme orientações
@@ -223,67 +268,7 @@ Analisando os pressupostos de \cite{ref3} e \cite{ref4} concluimos que....
 %% === remover daqui =====================================================
 %% ***********************************************************************
 =================================================
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-\begin{itemize}
-	\item
-	\item Second item in a list
-	\item Third item in a list
-\end{itemize}
-
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
-
+\section{Elementos textuais - Tabelas}
 
 %% ***********************************************************************
 %% === ate aqui    =====  ================================================
